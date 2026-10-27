@@ -1,0 +1,264 @@
+.active-link{
+  color:var(--orange);
+}
+
+.artifact-hero{
+  padding:70px 0 48px;
+}
+
+.artifact-back{
+  display:inline-block;
+  margin-bottom:36px;
+  color:var(--muted);
+  font-weight:700;
+  font-size:.9rem;
+}
+
+.artifact-back:hover{
+  color:var(--orange);
+}
+
+.artifact-eyebrow{
+  display:block;
+  color:var(--orange);
+  font-weight:800;
+  font-size:.75rem;
+  letter-spacing:.13em;
+}
+
+.artifact-hero h1{
+  font-size:clamp(3rem,7vw,6rem);
+  margin:12px 0 20px;
+  max-width:900px;
+}
+
+.artifact-hero > p{
+  max-width:760px;
+  color:var(--muted);
+  font-size:1.05rem;
+}
+
+.artifact-tabs{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin-top:32px;
+}
+
+.artifact-tab{
+  border:1px solid var(--line);
+  background:var(--white);
+  color:var(--ink);
+  padding:11px 16px;
+  border-radius:12px;
+  font-weight:700;
+  cursor:pointer;
+}
+
+.artifact-tab.active{
+  background:var(--orange);
+  border-color:var(--orange);
+  color:#fff;
+}
+
+.artifact-main{
+  padding-bottom:100px;
+}
+
+.artifact-panel{
+  display:none;
+}
+
+.artifact-panel.active{
+  display:block;
+}
+
+.artifact-section-heading{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:50px;
+  align-items:end;
+  border-top:1px solid var(--line);
+  padding-top:38px;
+  margin-bottom:32px;
+}
+
+.artifact-section-heading span{
+  color:var(--orange);
+  font-size:.75rem;
+  font-weight:800;
+  letter-spacing:.12em;
+}
+
+.artifact-section-heading h2{
+  margin:7px 0 0;
+}
+
+.artifact-section-heading p{
+  margin:0;
+  color:var(--muted);
+  text-align:justify;
+}
+
+.artifact-course-list{
+  display:grid;
+  gap:16px;
+}
+
+.artifact-course{
+  border:1px solid var(--line);
+  background:var(--white);
+  border-radius:20px;
+  padding:24px;
+}
+
+.artifact-course-head{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:28px;
+  align-items:start;
+  margin-bottom:18px;
+}
+
+.artifact-course-head h3{
+  margin:0;
+}
+
+.artifact-course-head p{
+  margin:0;
+  color:var(--muted);
+  text-align:justify;
+}
+
+.artifact-files{
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:12px;
+}
+
+.artifact-file{
+  border:1px solid var(--line);
+  border-radius:16px;
+  padding:16px;
+  background:#fff;
+  display:grid;
+  grid-template-columns:48px 1fr;
+  gap:12px;
+}
+
+.artifact-file-type{
+  width:44px;
+  height:44px;
+  border-radius:12px;
+  display:grid;
+  place-items:center;
+  background:var(--paper2);
+  color:var(--orange);
+  font-size:.7rem;
+  font-weight:800;
+}
+
+.artifact-file h4{
+  margin:0 0 5px;
+  font-size:.98rem;
+}
+
+.artifact-file p{
+  margin:0;
+  color:var(--muted);
+  font-size:.87rem;
+}
+
+.artifact-file a{
+  display:inline-block;
+  margin-top:10px;
+  color:var(--orange-dark);
+  font-size:.85rem;
+  font-weight:800;
+}
+
+.artifact-file .no-link{
+  display:inline-block;
+  margin-top:10px;
+  color:var(--muted);
+  font-size:.82rem;
+  font-weight:700;
+}
+
+.artifact-subtitle{
+  margin:34px 0 14px;
+}
+
+.artifact-photo-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:14px;
+  align-items:start;
+}
+
+.artifact-photo-card{
+  margin:0;
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:18px;
+  overflow:hidden;
+}
+
+.artifact-photo-box{
+  width:100%;
+  height:220px;
+  overflow:hidden;
+  background:var(--paper2);
+}
+
+.artifact-photo-box img{
+  width:100%;
+  height:100%;
+  display:block;
+  object-fit:cover;
+  object-position:center;
+}
+
+.artifact-photo-card figcaption{
+  padding:12px 14px;
+  color:var(--muted);
+  font-size:.84rem;
+  line-height:1.5;
+}
+
+.artifact-footer{
+  padding:26px max(20px,calc((100vw - 1180px)/2));
+  background:var(--black);
+  color:#bfb8af;
+  font-size:.85rem;
+}
+
+@media(max-width:800px){
+  .artifact-section-heading,
+  .artifact-course-head{
+    grid-template-columns:1fr;
+    gap:12px;
+  }
+
+  .artifact-files{
+    grid-template-columns:1fr;
+  }
+
+  .artifact-photo-grid{
+    grid-template-columns:1fr 1fr;
+  }
+}
+
+@media(max-width:560px){
+  .artifact-hero{
+    padding-top:50px;
+  }
+
+  .artifact-hero h1{
+    font-size:2.7rem;
+  }
+
+  .artifact-photo-grid{
+    grid-template-columns:1fr;
+  }
+}

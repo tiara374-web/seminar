@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="E-Portofolio PPG terintegrasi">
+<title>E-Portofolio PPG</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress"><span id="progressBar"></span></div>
+<header class="topbar">
+  <a class="brand" href="#home"><span class="brand-mark">PPG</span><span>Portfolio</span></a>
+  <button class="menu" id="menuBtn">☰</button>
+  <nav id="nav">
+    <a href="#home">Beranda</a>
+    <a href="#semester1">Semester 1</a>
+    <a href="#semester2">Semester 2</a>
+    <a href="#lk3">Refleksi PPG</a>
+    <a href="#artefak">Artefak</a>
+  </nav>
+</header>
+
+<main>
+<section id="home" class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy reveal">
+      <div class="pill">PORTOFOLIO DIGITAL • PPG</div>
+      <h1>Perjalanan belajar menuju <em>guru profesional.</em></h1>
+      <p id="tagline" class="lead"></p>
+      <div class="profile">
+        <div><small>Nama</small><strong id="name"></strong></div>
+        <div><small>Program Studi</small><strong id="program"></strong></div>
+        <div><small>Institusi</small><strong id="institution"></strong></div>
+      </div>
+      <div class="buttons">
+        <a class="btn primary" href="#semester1">Jelajahi Portofolio</a>
+      </div>
+    </div>
+    <div class="hero-art reveal">
+      <div class="orange-disc"></div>
+      <div class="paper">
+        <span>01</span><b>Refleksi</b>
+        <span>02</span><b>Artefak</b>
+        <span>03</span><b>Tindak Lanjut</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="manifesto">
+  <div class="wrap reveal">
+    <div class="manifesto-title">Satu website.<br>Satu perjalanan.</div>
+    <p>Semester 1 menjadi fondasi. Semester 2 memperluas cara pandang dan profesionalitas. LK 3 menyatukan semuanya menjadi komitmen untuk memulai karier sebagai guru.</p>
+  </div>
+</section>
+
+<section id="semester1" class="portfolio-section wrap">
+  <div class="section-label">01 / LK 2</div>
+  <div class="section-heading reveal">
+    <div><span>SEMESTER 1</span><h2>Fondasi cara berpikir sebagai pendidik.</h2></div>
+    <p>Semester pertama menjadi fondasi penting dalam perjalanan saya sebagai calon guru. Saya belajar bahwa menjadi guru tidak hanya tentang merancang dan melaksanakan pembelajaran, tetapi juga memahami peserta didik, melakukan asesmen yang bermakna, berpegang pada nilai pendidikan, serta terus melakukan refleksi dan pengembangan diri. Melalui perkuliahan dan PPL, saya semakin menyadari bahwa setiap mata kuliah saling berkaitan. Teori yang dipelajari menjadi lebih bermakna ketika diterapkan dan direfleksikan dalam situasi pembelajaran yang nyata.</p>
+  </div>
+  <div class="section-heading reveal">
+    <div><h3>Alur Berpikir Refleksi 4C.</h3></div>
+    <p>Setiap mata kuliah akan dibedah melalui empat tahapan reflektif yang saling berkesinambungan, memeriksa bagaimana pemahaman teoretis diuji oleh realitas sekolah hingga pada aksi nyata.</p>
+  </div>
+  <div id="semester1List" class="course-grid"></div>
+</section>
+
+<section id="semester2" class="portfolio-section semester2">
+  <div class="wrap">
+    <div class="section-label">02 / LK 2</div>
+    <div class="section-heading reveal">
+      <div><span>SEMESTER 2</span><h2>Penguatan praktik dan profesionalitas.</h2></div>
+      <p>Melalui pembelajaran dan pengalaman praktik pada Semester 2, saya semakin memahami pentingnya mengintegrasikan teori dengan praktik nyata. Proses ini membentuk saya menjadi calon pendidik yang lebih reflektif, adaptif, kolaboratif, dan berkomitmen untuk terus mengembangkan profesionalitas.</p>
+    </div>
+    <div id="semester2List" class="course-grid"></div>
+  </div>
+</section>
+
+<section id="lk3" class="portfolio-section wrap">
+  <div class="section-label">03 / LK 3</div>
+  <div class="section-heading reveal">
+    <div><span>REFLEKSI PPG</span><h2>Dari pengalaman belajar menjadi komitmen profesional.</h2></div>
+    <p>Refleksi menyeluruh setelah mengikuti rangkaian Pendidikan Profesi Guru.</p>
+  </div>
+  <div class="lk3-grid">
+    <article class="feature-card reveal">
+      <div class="feature-number">01</div>
+      <h3>Pendidikan Indonesia yang Saya Harapkan</h3>
+      <p id="educationView"></p>
+    </article>
+    <article class="feature-card reveal">
+      <div class="feature-number">02</div>
+      <h3>Langkah Menjadi Guru Profesional</h3>
+      <p id="professionalView"></p>
+    </article>
+    <article class="feature-card wide reveal">
+      <div class="feature-number">03</div>
+      <h3>Tiga Rencana Tindak Lanjut</h3>
+      <div id="rtlView" class="rtl-grid"></div>
+    </article>
+  </div>
+</section>
+
+<section id="artefak" class="portfolio-section archive">
+  <div class="wrap">
+    <div class="section-label">04 / ARTEFAK</div>
+    <div class="section-heading reveal">
+      <div><span>DOKUMENTASI</span><h2>Bukti perjalanan belajar.</h2></div>
+      <p>Tambahkan tautan PDF, Google Drive, foto dokumentasi, modul, LKPD, media, dan produk pembelajaran.</p>
+    </div>
+    <div class="archive-single">
+      <a class="archive-card archive-main-card reveal"
+      href="artefak.html">
+
+    <b>Lihat Semua Artefak →</b>
+
+  </a>
+</div>
+  </div>
+</section>
+
+<section class="closing">
+  <div class="wrap reveal">
+    <span>PORTOFOLIO DIGITAL</span>
+    <h2>Bukan sekadar kumpulan tugas, tetapi jejak perubahan cara berpikir dan bertindak sebagai pendidik.</h2>
+  </div>
+</section>
+</main>
+
+<footer><span>PPG • E-Portofolio</span><span>© <b id="year"></b></span></footer>
+<script src="content.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

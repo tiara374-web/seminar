@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artefak • E-Portofolio PPG</title>
+
+  <!-- Tetap memakai CSS utama dari project lama -->
+  <link rel="stylesheet" href="style.css">
+  <!-- CSS tambahan khusus halaman artefak -->
+  <link rel="stylesheet" href="artefak.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a class="brand" href="index.html#home">
+    <span class="brand-mark">PPG</span>
+    <span>Portfolio</span>
+  </a>
+
+  <button class="menu" id="artifactMenuBtn">☰</button>
+
+  <nav id="artifactNav">
+    <a href="index.html#home">Beranda</a>
+    <a href="index.html#semester1">Semester 1</a>
+    <a href="index.html#semester2">Semester 2</a>
+    <a href="index.html#lk3">Refleksi PPG</a>
+    <a href="artefak.html" class="active-link">Artefak</a>
+  </nav>
+</header>
+
+<main>
+  <section class="artifact-hero wrap">
+    <a class="artifact-back" href="index.html#artefak">← Kembali ke portofolio</a>
+
+    <span class="artifact-eyebrow">DOKUMENTASI</span>
+    <h1>Bukti perjalanan belajar.</h1>
+
+    <p>
+      Kumpulan tugas, dokumen, perangkat pembelajaran, dan dokumentasi
+      yang mendukung refleksi selama mengikuti PPG.
+    </p>
+
+    <div class="artifact-tabs" role="tablist" aria-label="Kategori artefak">
+      <button class="artifact-tab active" data-target="semester1" type="button">
+        Semester 1
+      </button>
+      <button class="artifact-tab" data-target="semester2" type="button">
+        Semester 2
+      </button>
+      <button class="artifact-tab" data-target="ppl" type="button">
+        Praktik Lapangan
+      </button>
+    </div>
+  </section>
+
+  <section class="artifact-main wrap">
+
+    <!-- SEMESTER 1 -->
+    <div class="artifact-panel active" id="semester1">
+      <div class="artifact-section-heading">
+        <div>
+          <span>01 / SEMESTER 1</span>
+          <h2>Artefak Semester 1</h2>
+        </div>
+        <p>
+          Artefak terpilih yang mendukung refleksi enam pengalaman belajar
+          pada Semester 1.
+        </p>
+      </div>
+
+      <div id="semester1Artifacts" class="artifact-course-list"></div>
+    </div>
+
+    <!-- SEMESTER 2 -->
+    <div class="artifact-panel" id="semester2">
+      <div class="artifact-section-heading">
+        <div>
+          <span>02 / SEMESTER 2</span>
+          <h2>Artefak Semester 2</h2>
+        </div>
+        <p>
+          Bagian ini dapat dilengkapi seiring penyelesaian refleksi
+          dan tugas mata kuliah Semester 2.
+        </p>
+      </div>
+
+      <div id="semester2Artifacts" class="artifact-course-list"></div>
+    </div>
+
+<!-- PPL -->
+<div class="artifact-panel" id="ppl">
+
+  <div class="artifact-section-heading">
+    <div>
+      <span>03 / PRAKTIK LAPANGAN</span>
+      <h2>Dokumentasi Praktik Lapangan</h2>
+    </div>
+
+    <p>
+      Dokumentasi kegiatan, perangkat ajar, asesmen,
+      serta refleksi selama kegiatan PPL.
+    </p>
+  </div>
+
+
+    <!-- =========================
+        PPL 1
+    ========================== -->
+
+    <h3 class="artifact-subtitle">
+      PPL 1 – Praktik Pembelajaran Terbimbing
+    </h3>
+
+    <div class="artifact-photo-grid">
+
+      <figure class="artifact-photo-card">
+        <div class="artifact-photo-box">
+          <img
+            src="assets/PPL 1/1.jpeg"
+            alt="Dokumentasi pembelajaran">
+        </div>
+        <figcaption>Dokumentasi pembelajaran</figcaption>
+      </figure>
+
+
+      <figure class="artifact-photo-card">
+        <div class="artifact-photo-box">
+          <img
+            src="assets/PPL 1/3.jpeg"
+            alt="Aktivitas peserta didik">
+        </div>
+        <figcaption>Aktivitas peserta didik</figcaption>
+      </figure>
+
+
+      <figure class="artifact-photo-card">
+        <div class="artifact-photo-box">
+          <img
+            src="assets/PPL 1/2.jpeg"
+            alt="Proses menjelaskan">
+        </div>
+        <figcaption>Proses menjelaskan</figcaption>
+      </figure>
+
+      <figure class="artifact-photo-card">
+        <div class="artifact-photo-box">
+          <img
+            src="assets/PPL 1/4.jpeg"
+            alt="Dokumentasi pembelajaran">
+        </div>
+        <figcaption>Dokumentasi pembelajaran</figcaption>
+      </figure>
+
+
+      <figure class="artifact-photo-card">
+        <div class="artifact-photo-box">
+          <img
+            src="assets/PPL 1/5.jpeg"
+            alt="Aktivitas peserta didik">
+        </div>
+        <figcaption>Aktivitas peserta didik</figcaption>
+      </figure>
+           <figure class="artifact-photo-card">
+        <div class="artifact-photo-box">
+          <img
+            src="assets/PPL 1/6.jpeg"
+            alt="Aktivitas peserta didik">
+        </div>
+        <figcaption>Aktivitas peserta didik</figcaption>
+      </figure>
+
+    </div>
+
+
+    <h3 class="artifact-subtitle">
+      Perangkat & Refleksi PPL 1
+    </h3>
+
+    <div
+      id="pplArtifacts"
+      class="artifact-course-list">
+    </div>
+
+
+    <!-- =========================
+        PPL 2
+    ========================== -->
+
+    <h3
+      class="artifact-subtitle"
+      style="margin-top:60px;">
+      PPL 2 – Praktik Pembelajaran Mandiri
+    </h3>
+
+    <div class="artifact-photo-grid">
+
+      <figure class="artifact-photo-card">
+        <div class="artifact-photo-box">
+          <img
+            src="assets/PPL 2/1.jpg"
+            alt="Dokumentasi pembelajaran">
+        </div>
+        <figcaption>Dokumentasi pembelajaran</figcaption>
+      </figure>
+
+
+      <figure class="artifact-photo-card">
+        <div class="artifact-photo-box">
+          <img
+            src="assets/PPL 2/3.jpg"
+            alt="Aktivitas peserta didik">
+        </div>
+        <figcaption>Aktivitas peserta didik</figcaption>
+      </figure>
+
+
+      <figure class="artifact-photo-card">
+        <div class="artifact-photo-box">
+          <img
+            src="assets/PPL 2/2.jpg"
+            alt="Proses menjelaskan">
+        </div>
+        <figcaption>Proses menjelaskan</figcaption>
+      </figure>
+
+      <figure class="artifact-photo-card">
+        <div class="artifact-photo-box">
+          <img
+            src="assets/PPL 2/4.jpg"
+            alt="Dokumentasi pembelajaran">
+        </div>
+        <figcaption>Dokumentasi pembelajaran</figcaption>
+      </figure>
+
+
+      <figure class="artifact-photo-card">
+        <div class="artifact-photo-box">
+          <img
+            src="assets/PPL 2/5.jpg"
+            alt="Aktivitas peserta didik">
+        </div>
+        <figcaption>Aktivitas peserta didik</figcaption>
+      </figure>
+           <figure class="artifact-photo-card">
+        <div class="artifact-photo-box">
+          <img
+            src="assets/PPL 2/6.jpg"
+            alt="Aktivitas peserta didik">
+        </div>
+        <figcaption>Aktivitas peserta didik</figcaption>
+      </figure>
+
+    </div>
+
+
+    <h3 class="artifact-subtitle">
+      Perangkat & Refleksi PPL 2
+    </h3>
+
+    <div
+      id="ppl2Artifacts"
+      class="artifact-course-list">
+    </div>
+
+  </div>
+
+  </section>
+</main>
+
+<footer class="artifact-footer">
+  © <span id="artifactYear"></span> E-Portofolio PPG
+</footer>
+
+<script src="artifacts-data.js"></script>
+<script src="artefak.js"></script>
+</body>
+</html>
